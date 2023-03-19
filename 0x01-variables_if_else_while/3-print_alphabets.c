@@ -1,22 +1,18 @@
 #include<stdio.h>
+#include<stdlib.h>
 /**
- * main -Entry point
+ * main-Prints alphabets lowercase and uppercase
  * Return: 0
  */
 int main(void)
 {
-int lowerCase = 'a';
-int upperCase = 'A';
-while (lowerCase <= 'z')
-{
-putchar(lowerCase);
-lowerCase += 1;
-}
-while (upperCase <= 'z')
-{
-putchar(upperCase);
-upperCase += 1;
-}
+int a;
+int A;
+
+for (a = 'a'; a <= 'z'; ++a)
+putchar(a);
+for (A = 'A'; A <= 'Z'; ++A)
+putchar(A);
 putchar('\n');
 return (0);
 }
